@@ -8,6 +8,7 @@ SPECIAL_CHARACTERS  = list("!@#$%^&*()_-+={[}]\:;<,>.?/")
 
 def create_password(include_special_characters=True, password_length=16):
     new_password = ''
+    
     for i in range(password_length):
         if include_special_characters:
             new_password += choice(choice([ALPHABET, UPPERCASE_ALPHABET, NUMBERS, SPECIAL_CHARACTERS]))
