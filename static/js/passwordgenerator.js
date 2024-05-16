@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     password_length_slider.oninput = function () {
         password_length = password_length_slider.value;
-        document.getElementById('passwordLengthLabel').innerHTML = password_length;
+        document.getElementById('passwordLengthLabel').innerHTML = "Password Length: " + password_length;
         updatePassword();
     };
 
